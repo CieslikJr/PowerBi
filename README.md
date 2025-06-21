@@ -26,9 +26,9 @@ Este projeto simula a gestão de uma clínica médica utilizando o Power BI. A p
 
 ## 📂 Arquivos
 
-- `PowerBI_Portfolio_Clinica_Compacta.csv`: base de dados simulada
-- `Dashboard_Clinica.pbix`: arquivo Power BI com o dashboard
-- `dashboard-preview.png`: imagem de demonstração
+- [CSV de Dados (base compacta)](PowerBI_Portfolio_Clinica_Compacta.csv)  
+- [Arquivo .pbix (Dashboard)](bi_clinica.pbix)  
+- [Preview em PNG](dashboard-preview.png)
 
 ## ⚠️ Observações
 
