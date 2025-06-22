@@ -9,10 +9,16 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: #ffffff;
-      background: #0a0f2c url('https://cdn.jsdelivr.net/gh/olton/Metro-UI-CSS@4.3.2/images/bg/neural.png') repeat;
-      background-size: cover;
-      background-attachment: fixed;
+      background: linear-gradient(to right top, #0a0f2c, #141c3a, #1d2848, #263557, #304265);
+      background-size: 400% 400%;
+      animation: gradientMove 20s ease infinite;
       overflow-x: hidden;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     header {
