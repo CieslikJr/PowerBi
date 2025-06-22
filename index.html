@@ -69,6 +69,24 @@
       box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
     }
 
+    .dashboard-card {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .dashboard-card img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .dashboard-info {
+      flex: 1;
+    }
+
     .card h2 {
       margin-top: 0;
       color: #00e6e6;
@@ -116,10 +134,13 @@
       </p>
     </div>
 
-    <div class="card">
-      <h2>🏥 Dashboard Clínica</h2>
-      <p>Gestão de consultas, convênios, especialidades e presenças. Foco em indicadores operacionais de uma clínica médica.</p>
-      <a class="btn" href="https://app.powerbi.com/view?r=LINK-CLINICA" target="_blank">Ver Dashboard</a>
+    <div class="card dashboard-card">
+      <img src="https://via.placeholder.com/300x180.png?text=Clínica" alt="Dashboard Clínica">
+      <div class="dashboard-info">
+        <h2>🏥 Dashboard Clínica</h2>
+        <p>Gestão de consultas, convênios, especialidades e presenças. Foco em indicadores operacionais de uma clínica médica.</p>
+        <a class="btn" href="https://app.powerbi.com/view?r=LINK-CLINICA" target="_blank">Ver Dashboard</a>
+      </div>
     </div>
 
     <div class="card">
