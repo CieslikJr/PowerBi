@@ -9,7 +9,9 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: #ffffff;
-      background: radial-gradient(circle at center, #0a0f2c, #000);
+      background: #0a0f2c url('https://cdn.jsdelivr.net/gh/olton/Metro-UI-CSS@4.3.2/images/bg/neural.png') repeat;
+      background-size: cover;
+      background-attachment: fixed;
       overflow-x: hidden;
     }
 
@@ -77,21 +79,8 @@
       font-size: 0.9em;
       color: #888;
     }
-
-    /* Parallax effect */
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
-      opacity: 0.03;
-      z-index: -1;
-      pointer-events: none;
-      transform: scale(1.1);
-    }
   </style>
   <script>
-    // Efeito sutil de movimento com o mouse
     document.addEventListener('mousemove', (e) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 10;
       const y = (e.clientY / window.innerHeight - 0.5) * 10;
@@ -125,7 +114,7 @@
     </div>
 
     <div class="card">
-      <h2>📊 Dashboard Marketing Digital</h2>
+      <h2>📈 Dashboard Marketing Digital</h2>
       <p>Visão de campanhas, conversões, canais de tráfego, ROI e desempenho de mídias sociais.</p>
       <a class="btn" href="https://app.powerbi.com/view?r=LINK-MARKETING" target="_blank">Ver Dashboard</a>
     </div>
