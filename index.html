@@ -9,22 +9,14 @@
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       color: #ffffff;
-      background: linear-gradient(to right top, #0a0f2c, #141c3a, #1d2848, #263557, #304265);
-      background-size: 400% 400%;
-      animation: gradientMove 20s ease infinite;
+      background-color: #000000;
       overflow-x: hidden;
-    }
-
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
     }
 
     header {
       text-align: center;
       padding: 60px 20px 20px;
-      position: relative;
+      background-color: #111;
     }
 
     header h1 {
@@ -34,7 +26,7 @@
 
     header p {
       font-size: 1.2rem;
-      color: #aaa;
+      color: #888;
     }
 
     .container {
@@ -45,18 +37,18 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.05);
+      background: #111111;
       padding: 30px;
       margin-bottom: 30px;
       border-radius: 15px;
-      backdrop-filter: blur(8px);
+      border: 1px solid #222;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
     }
 
     .card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
     }
 
     .card h2 {
@@ -65,7 +57,7 @@
     }
 
     .card p {
-      color: #ddd;
+      color: #bbb;
     }
 
     .btn {
@@ -83,16 +75,10 @@
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
-      color: #888;
+      background-color: #111;
+      color: #666;
     }
   </style>
-  <script>
-    document.addEventListener('mousemove', (e) => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 10;
-      const y = (e.clientY / window.innerHeight - 0.5) * 10;
-      document.body.style.backgroundPosition = `${x}px ${y}px`;
-    });
-  </script>
 </head>
 <body>
   <header>
