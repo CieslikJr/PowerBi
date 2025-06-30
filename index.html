@@ -42,7 +42,7 @@
     }
 
     .container {
-      max-width: 1000px;
+      max-width: 1200px;
       margin: auto;
       padding: 30px 20px;
     }
@@ -57,11 +57,16 @@
       font-size: 1.6rem;
     }
 
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
     .card {
       background: #1a1a1a;
       padding: 20px;
       border-radius: 10px;
-      margin-bottom: 20px;
       box-shadow: 0 0 10px rgba(0,255,255,0.05);
     }
 
@@ -130,30 +135,32 @@
 
     <section>
       <h2 class="section-title">Projetos em Power BI</h2>
-      <div class="card">
-        <h3>🏥 Dashboard Clínica</h3>
-        <p>Indicadores de consultas, convênios, especialidades e presenças.</p>
-        <a class="btn" href="https://app.powerbi.com/view?r=LINK-CLINICA" target="_blank">Ver Dashboard</a>
-      </div>
-      <div class="card">
-        <h3>🏀 Dashboard Esportes</h3>
-        <p>Desempenho atlético, treinos, competições e evolução.</p>
-        <a class="btn" href="https://app.powerbi.com/view?r=LINK-ESPORTES" target="_blank">Ver Dashboard</a>
-      </div>
-      <div class="card">
-        <h3>🚚 Dashboard Logística</h3>
-        <p>KPIs operacionais, entregas, desempenho de rotas e tempos médios.</p>
-        <a class="btn" href="https://app.powerbi.com/view?r=LINK-LOGISTICA" target="_blank">Ver Dashboard</a>
-      </div>
-      <div class="card">
-        <h3>📈 Dashboard Marketing</h3>
-        <p>Conversões, campanhas, ROI e canais de tráfego.</p>
-        <a class="btn" href="https://app.powerbi.com/view?r=LINK-MARKETING" target="_blank">Ver Dashboard</a>
-      </div>
-      <div class="card">
-        <h3>💼 Dashboard RH</h3>
-        <p>Admissões, absenteísmo, tempo de empresa e setores.</p>
-        <a class="btn" href="https://app.powerbi.com/view?r=LINK-RH" target="_blank">Ver Dashboard</a>
+      <div class="card-grid">
+        <div class="card">
+          <h3>🏥 Dashboard Clínica</h3>
+          <p>Indicadores de consultas, convênios, especialidades e presenças.</p>
+          <a class="btn" href="https://app.powerbi.com/view?r=LINK-CLINICA" target="_blank">Ver Dashboard</a>
+        </div>
+        <div class="card">
+          <h3>🏀 Dashboard Esportes</h3>
+          <p>Desempenho atlético, treinos, competições e evolução.</p>
+          <a class="btn" href="https://app.powerbi.com/view?r=LINK-ESPORTES" target="_blank">Ver Dashboard</a>
+        </div>
+        <div class="card">
+          <h3>🚚 Dashboard Logística</h3>
+          <p>KPIs operacionais, entregas, desempenho de rotas e tempos médios.</p>
+          <a class="btn" href="https://app.powerbi.com/view?r=LINK-LOGISTICA" target="_blank">Ver Dashboard</a>
+        </div>
+        <div class="card">
+          <h3>📈 Dashboard Marketing</h3>
+          <p>Conversões, campanhas, ROI e canais de tráfego.</p>
+          <a class="btn" href="https://app.powerbi.com/view?r=LINK-MARKETING" target="_blank">Ver Dashboard</a>
+        </div>
+        <div class="card">
+          <h3>💼 Dashboard RH</h3>
+          <p>Admissões, absenteísmo, tempo de empresa e setores.</p>
+          <a class="btn" href="https://app.powerbi.com/view?r=LINK-RH" target="_blank">Ver Dashboard</a>
+        </div>
       </div>
     </section>
 
