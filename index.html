@@ -5,205 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfólio Power BI - Daniel Júnior</title>
   <style>
-    body {
+    :root {
+      --bg-color: #0a0a0a;
+      --accent: #00f5d4;
+      --text-light: #ccc;
+      --text-dark: #111;
+    }
+
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', sans-serif;
-      color: #ffffff;
-      background-color: #000000;
-      overflow-x: hidden;
+      background-color: var(--bg-color);
+      color: white;
+      line-height: 1.6;
     }
 
     header {
+      background: #111;
+      padding: 60px 20px 30px;
       text-align: center;
-      padding: 60px 20px 20px;
-      background-color: #111;
     }
 
     header h1 {
       font-size: 2.5rem;
-      margin-bottom: 10px;
+      color: var(--accent);
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #888;
+      font-size: 1.1rem;
+      color: var(--text-light);
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: auto;
-      padding: 40px 20px;
-      position: relative;
+      padding: 30px 20px;
     }
 
-    .intro-section {
-      background-color: #1a1a1a;
-      border-left: 5px solid #00e6e6;
-      padding: 30px;
+    section {
       margin-bottom: 50px;
-      border-radius: 10px;
     }
 
-    .intro-section h2 {
-      margin-top: 0;
-      color: #00e6e6;
-    }
-
-    .intro-section p {
-      color: #ccc;
-      line-height: 1.6;
+    .section-title {
+      color: var(--accent);
+      margin-bottom: 15px;
+      font-size: 1.6rem;
     }
 
     .card {
-      background: #111111;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 15px;
-      border: 1px solid #222;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
-    }
-
-    .dashboard-card {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .dashboard-card img {
-      width: 300px;
-      height: auto;
+      background: #1a1a1a;
+      padding: 20px;
       border-radius: 10px;
-      object-fit: cover;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.05);
     }
 
-    .dashboard-info {
-      flex: 1;
-    }
-
-    .card h2 {
-      margin-top: 0;
-      color: #00e6e6;
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--accent);
     }
 
     .card p {
-      color: #bbb;
+      color: var(--text-light);
     }
 
     .btn {
       display: inline-block;
-      background: #00e6e6;
-      color: #000;
+      margin-top: 10px;
       padding: 10px 20px;
-      margin-top: 15px;
-      border-radius: 5px;
+      background: var(--accent);
+      color: var(--text-dark);
       text-decoration: none;
       font-weight: bold;
+      border-radius: 5px;
     }
 
     footer {
       text-align: center;
       padding: 20px;
-      font-size: 0.9em;
-      background-color: #111;
+      background: #111;
       color: #666;
+      font-size: 0.9rem;
     }
 
     @media (max-width: 768px) {
-      .dashboard-card {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-    
-      .dashboard-card img {
-        width: 100%;
-        height: auto;
-      }
-    
-      .intro-section, .card {
-        padding: 20px;
-      }
-    
       header h1 {
         font-size: 1.8rem;
       }
-    
-      header p {
-        font-size: 1rem;
+
+      .btn {
+        width: 100%;
+        text-align: center;
       }
     }
-
   </style>
 </head>
 <body>
   <header>
-    <h1>Portfólio Power BI - Daniel Júnior</h1>
-    <p>Transformando dados em decisões estratégicas</p>
+    <h1>Daniel Júnior</h1>
+    <p>Analista de BI | Power BI | Dados que geram valor</p>
   </header>
 
   <div class="container">
-    <div class="intro-section">
-      <h2>Sobre Mim</h2>
-      <p>Sou Daniel Júnior, formado em Análise e Desenvolvimento de Sistemas. Atuei como Analista de Melhoria Contínua e atualmente sou Analista de BI. Sou apaixonado por dados e por inovação, sempre buscando transformar informações em insights estratégicos para negócios.</p>
-      <h2>🛠Habilidades Técnicas</h2>
-      <p>
-        <strong>Ferramentas Microsoft:</strong> Power BI, Excel, Power Apps, Power Automate<br />
-        <strong>Outros:</strong> Python, Databricks<br />
-        <strong>Metodologias:</strong> Scrum e práticas ágeis
-      </p>
-    </div>
+    <section>
+      <h2 class="section-title">Sobre Mim</h2>
+      <div class="card">
+        <p>Sou formado em Análise e Desenvolvimento de Sistemas. Atuei como Analista de Melhoria Contínua e atualmente sou Analista de BI. Sou apaixonado por dados, ferramentas Microsoft e por transformar informações em estratégia.</p>
+      </div>
+    </section>
 
-    <div class="card dashboard-card">
-      <img src="https://via.placeholder.com/300x180.png?text=Clínica" alt="Dashboard Clínica">
-      <div class="dashboard-info">
-        <h2>🏥 Dashboard Clínica</h2>
-        <p>Gestão de consultas, convênios, especialidades e presenças. Foco em indicadores operacionais de uma clínica médica.</p>
+    <section>
+      <h2 class="section-title">Habilidades</h2>
+      <div class="card">
+        <p><strong>Microsoft:</strong> Power BI, Excel, Power Apps, Power Automate<br>
+        <strong>Outros:</strong> Python, Databricks<br>
+        <strong>Metodologias:</strong> Scrum, ágil</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projetos em Power BI</h2>
+      <div class="card">
+        <h3>🏥 Dashboard Clínica</h3>
+        <p>Indicadores de consultas, convênios, especialidades e presenças.</p>
         <a class="btn" href="https://app.powerbi.com/view?r=LINK-CLINICA" target="_blank">Ver Dashboard</a>
       </div>
-    </div>
+      <div class="card">
+        <h3>🏀 Dashboard Esportes</h3>
+        <p>Desempenho atlético, treinos, competições e evolução.</p>
+        <a class="btn" href="https://app.powerbi.com/view?r=LINK-ESPORTES" target="_blank">Ver Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>🚚 Dashboard Logística</h3>
+        <p>KPIs operacionais, entregas, desempenho de rotas e tempos médios.</p>
+        <a class="btn" href="https://app.powerbi.com/view?r=LINK-LOGISTICA" target="_blank">Ver Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>📈 Dashboard Marketing</h3>
+        <p>Conversões, campanhas, ROI e canais de tráfego.</p>
+        <a class="btn" href="https://app.powerbi.com/view?r=LINK-MARKETING" target="_blank">Ver Dashboard</a>
+      </div>
+      <div class="card">
+        <h3>💼 Dashboard RH</h3>
+        <p>Admissões, absenteísmo, tempo de empresa e setores.</p>
+        <a class="btn" href="https://app.powerbi.com/view?r=LINK-RH" target="_blank">Ver Dashboard</a>
+      </div>
+    </section>
 
-    <div class="card">
-      <h2>🏀 Dashboard Esportes</h2>
-      <p>Monitoramento de desempenho atlético, treinos, competições e evolução individual de atletas.</p>
-      <a class="btn" href="https://app.powerbi.com/view?r=LINK-ESPORTES" target="_blank">Ver Dashboard</a>
-    </div>
-
-    <div class="card">
-      <h2>🚚 Dashboard Logística</h2>
-      <p>Análise de entregas, KPIs operacionais, tempo médio de transporte e desempenho por rota.</p>
-      <a class="btn" href="https://app.powerbi.com/view?r=LINK-LOGISTICA" target="_blank">Ver Dashboard</a>
-    </div>
-
-    <div class="card">
-      <h2>📈 Dashboard Marketing Digital</h2>
-      <p>Visão de campanhas, conversões, canais de tráfego, ROI e desempenho de mídias sociais.</p>
-      <a class="btn" href="https://app.powerbi.com/view?r=LINK-MARKETING" target="_blank">Ver Dashboard</a>
-    </div>
-
-    <div class="card">
-      <h2>💼 Dashboard Recursos Humanos</h2>
-      <p>Análise de admissões, desligamentos, absenteísmo, tempo de empresa e desempenho por setor.</p>
-      <a class="btn" href="https://app.powerbi.com/view?r=LINK-RH" target="_blank">Ver Dashboard</a>
-    </div>
-
-    <div class="card">
-      <h2>📬 Contato</h2>
-      <p>
-        <strong>Email:</strong> <a class="btn" href="mailto:cieslik395@gmail.com">cieslik395@gmail.com</a><br />
-        <strong>LinkedIn:</strong> <a class="btn" href="https://www.linkedin.com/in/cieslikjr/" target="_blank">/in/cieslikjr</a><br />
-        <strong>GitHub:</strong> <a class="btn" href="https://github.com/CieslikJr" target="_blank">github.com/CieslikJr</a>
-      </p>
-    </div>
+    <section>
+      <h2 class="section-title">Contato</h2>
+      <div class="card">
+        <p>Email: <a href="mailto:cieslik395@gmail.com">cieslik395@gmail.com</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/cieslikjr/" target="_blank">/in/cieslikjr</a><br>
+        GitHub: <a href="https://github.com/CieslikJr" target="_blank">github.com/CieslikJr</a></p>
+      </div>
+    </section>
   </div>
 
   <footer>
-    © 2025 Daniel Júnior – Todos os dashboards utilizam dados fictícios com fins educacionais.
+    © 2025 Daniel Júnior – Dados fictícios para fins educacionais.
   </footer>
 </body>
 </html>
